@@ -1,0 +1,38 @@
+/* CSS files add styling rules to your content */
+@import url('https://fonts.googleapis.com/css?family=Handlee|Dancing+Script|Leckerli+One|Niconne|Meddon&display=swap');
+
+
+body {
+  font-family: 'Niconne', helvetica, arial, sans-serif;
+  margin: 2em;
+}
+
+.font-1 {
+  font-family: 'Handlee';
+}
+
+.font-2 {
+  font-family: 'Dancing Script';
+}
+
+.font-3 {
+  font-family: 'Leckerli One';
+}
+
+.font-4 {
+  font-family: 'Niconne';
+}
+
+.font-5 {
+  font-family: 'Meddon';
+}
+
+.container {
+  max-width: 50vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 90vw;
+  }
+}

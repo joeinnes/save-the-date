@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ada & Joe - Save The Date</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body class="antialiased bg-pink-100 text-gray-900">
+    <div class="container mx-auto">
+      <div>
+        <h1 class="fittext font-5">
+          save the date
+        </h1>
+      </div>
+    </div>
+    
+    <div class="container mx-auto lg:px-32">
+      
+      <div>
+        <p class="fittext font-1 py-2">
+          for the wedding of
+        </p>        
+      </div>
+      
+      <hr class="border-t-2 border-dotted border-gray-600"/>
+      
+      <div>
+        <div class="fittext">
+          <h1><span class="font-3">Ada</span> <span class="font-hairline">&</span> <span class="font-1 font-black">Joe</span></h1>
+        </div>
+      </div>
+      
+      <hr class="border-t-2 border-dotted border-gray-600"/>
+      
+      <div>
+        <h1 class="fittext font-2">
+          XX August 2021
+        </h1>
+        <h1 class="fittext font-3">
+          Budapest, Hungary
+        </h1>
+      </div>
+      
+      <hr class="border-t-2 border-dotted border-gray-600"/>
+      
+      <div>
+        <p class="fittext font-5 py-2 text-uppercase">
+          formal invitation to follow
+        </p>
+        <hr class="border-t-2 border-dotted border-gray-600"/>
+        <p class="fittext font-1 py-2 text-uppercase">
+          where should we send your invitation - <a href="mailto:addresses@joeadawedding.com" class="text-blue-500">click here</a>!
+        </p>
+      </div>
+
+    </div>
+    <script src="js/fitty.js"></script>
+    <script>
+      document.querySelectorAll('.fittext').forEach(el => {
+        fitty(el)
+      })
+    </script>
+  </body>
+</html>
