@@ -1,10 +1,11 @@
 /* CSS files add styling rules to your content */
 @import url('https://fonts.googleapis.com/css?family=Handlee|Dancing+Script|Leckerli+One|Meddon|Quicksand&display=swap');
 
-
 body {
   font-family: 'Quicksand', helvetica, arial, sans-serif;
   margin: 2em;
+  background: url('https://cdn.glitch.com/b6b174b3-2c61-4c47-8475-d07397416ce2%2F97154_brushed-silver-background.png?v=1577351854665');
+  background-repeat: repeat-y;
 }
 
 .font-1 {
