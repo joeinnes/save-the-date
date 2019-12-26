@@ -1,9 +1,9 @@
 /* CSS files add styling rules to your content */
-@import url('https://fonts.googleapis.com/css?family=Handlee|Dancing+Script|Leckerli+One|Niconne|Meddon&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Handlee|Dancing+Script|Leckerli+One|Meddon|Quicksand&display=swap');
 
 
 body {
-  font-family: 'Niconne', helvetica, arial, sans-serif;
+  font-family: 'Quicksand', helvetica, arial, sans-serif;
   margin: 2em;
 }
 
@@ -19,12 +19,18 @@ body {
   font-family: 'Leckerli One';
 }
 
-.font-4 {
-  font-family: 'Niconne';
-}
-
 .font-5 {
   font-family: 'Meddon';
+}
+
+.font-sans {
+  font-family: 'Quicksand';
+  text-transform: uppercase;
+}
+
+.j-and-c {
+  text-align: justify;
+  text-align-last: center;
 }
 
 .container {
@@ -35,4 +41,8 @@ body {
   .container {
     max-width: 90vw;
   }
+}
+
+#modal {
+  min-height: 100vh;
 }
