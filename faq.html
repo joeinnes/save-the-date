@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ada & Joe - Save The Date</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <!--<link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />-->
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://cdn.glitch.com/b6b174b3-2c61-4c47-8475-d07397416ce2%2Fapple-touch-icon.png?v=1577345847213"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://cdn.glitch.com/b6b174b3-2c61-4c47-8475-d07397416ce2%2Ffavicon-32x32.png?v=1577345846515"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://cdn.glitch.com/b6b174b3-2c61-4c47-8475-d07397416ce2%2Ffavicon-16x16.png?v=1577345846577"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="http://fonts.gstatic.com/" />
+    <link rel="preconnect" href="http://fonts.googleapis.com" />
+    <meta name="Description" content="Ada & Joe are getting married!" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body style="opacity: 0">
+    <main>
+      <div class="container">
+        <div>
+          <h1 class="fittext font-2">
+            Ada & Joe
+          </h1>
+        </div>
+      </div>
+      <div class="container-wide">
+        <nav class="font-sans">
+          <a href="/">Home</a>
+          <a href="/">Venue</a>
+          <a href="/">Accommodation</a>
+          <a href="/faq.html" style="text-decoration: underline;">FAQs</a>
+          <a href="/photos.html">Photos</a>
+          <a href="/">Contact</a>
+        </nav>
+        <h2 class="j-and-c font-sans">
+          FAQs
+        </h2>
+        <div class="padded">
+          <details>
+            <summary class="font-1">Can I bring my children?</summary>
+            <p>
+              Yes! Children are welcome at the wedding, and will be listed on
+              your invitation. Be aware that although Budapest is very safe, the
+              area immediately outside the venue is publicly accessible, so
+              children should be supervised. We are planning to help with this
+              for at least some of the event.
+            </p>
+            <p>
+              We would also ask that children stay quiet during the
+              ceremony&mdash;otherwise we'd ask you to pop outside with them
+              until they've calmed down.
+            </p>
+          </details>
+          <details>
+            <summary class="font-1">Can I take photos?</summary>
+            <p>
+              We'd love you to take photos! After the wedding, we'll share a
+              link where you can share your best pictures with us and the other
+              wedding-goers. We'd rather you didn't upload any photos to social
+              media.
+            </p>
+            <p>
+              We would however ask you to <strong>avoid</strong> taking photos
+              during the ceremony itself&mdash;we've paid for professional
+              photographers, and we'd rather they didn't miss the shot because
+              someone else's camera got in the way!
+            </p>
+          </details>
+          <details>
+            <summary class="font-1">Where can I stay?</summary>
+            <p>
+              We'll be sharing accommodation suggestions shortly.
+            </p>
+          </details>
+          <details>
+            <summary class="font-1">Will my Uber work?</summary>
+            <p>
+              Unfortunately, Uber has been chased out of Hungary, but there is a
+              similar app called <a href="https://bolt.eu/">Bolt</a>. It's fast,
+              relatively cheap, and works pretty well.
+            </p>
+          </details>
+          <details>
+            <summary class="font-1">What drinks will be available?</summary>
+            <p>
+              Soft drinks (fizzy, mineral water, coffee, fruit juice) will be
+              available all night. There will also be an open bar with local
+              Hungarian beers (unfiltered light beer, dark beer) and
+              alcohol-free Heineken, as well as a selection of high-quality
+              Hungarian wines.
+            </p>
+            <p>
+              Hungary has a fantastic climate and soil for growing wine, and the
+              quality and standard of Hungarian wines is very good.
+            </p>
+          </details>
+          <details>
+            <summary class="font-1">Do I need a car?</summary>
+            <p>
+              Almost certainly not. The event itself is easy to get to by
+              walking (approx 10-15 minutes from nearest public transport
+              stops), or by taxi. Budapest itself is a very good value place to
+              stay, and the public transport system is very effective and fast.
+            </p>
+          </details>
+          <details>
+            <summary class="font-1">What should I see around the city?</summary>
+            <p>
+              There are loads of cool things to see and do around the city. We'd
+              recommend going up Gellert Hill, taking a trip to the Castle
+              district, visiting the infamous Szimpla kert. The Parliament
+              building is also very impressive If you find yourself with a bit
+              of time on your hands, pop down to Margaret Island, and wander
+              around the gardens a bit.
+            </p>
+          </details>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p class="float-right">
+        With ❤️ from Ada & Joe
+      </p>
+      <p id="language"></p>
+    </footer>
+    <link
+      rel="preload"
+      href="/style.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet';"
+      id="my-styles"
+    />
+    <noscript><link rel="stylesheet" href="/style.css"/></noscript>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/fitty.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: [
+            "Handlee",
+            "Dancing Script",
+            "Leckerli One",
+            "Meddon",
+            "Quicksand"
+          ]
+        },
+        active() {
+          document.querySelectorAll(".fittext").forEach(el => {
+            fitty(el);
+          });
+        }
+      });
+
+      const linkEl = document.querySelector("#my-styles");
+      if (linkEl.rel === "stylesheet") {
+        document.body.style.opacity = 1;
+      } else {
+        linkEl.addEventListener(
+          "load",
+          () => (document.body.style.opacity = 1)
+        );
+      }
+
+      const langEl = document.querySelector("#language");
+      const prefLang = navigator.languages
+        ? navigator.languages[0]
+        : navigator.language || navigator.userLanguage;
+      langEl.innerText = prefLang;
+
+      if (prefLang[0] + prefLang[1] === "HU") {
+        // Display Hungarian
+      }
+    </script>
+  </body>
+</html>
