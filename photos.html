@@ -32,7 +32,7 @@
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="preconnect" href="http://fonts.gstatic.com/" />
     <link rel="preconnect" href="http://fonts.googleapis.com" />
-    <meta name="Description" content="Ada & Joe are getting married!">
+    <meta name="Description" content="Ada & Joe are getting married!" />
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
@@ -41,63 +41,31 @@
     <main>
       <div class="container">
         <div>
-          <h1 class="fittext font-5">
-            save the date
+          <h1 class="fittext font-2">
+            Ada & Joe
           </h1>
         </div>
       </div>
 
-      <div class="container">
-        <div class="padded">
-          <div>
-            <p class="fittext font-sans">
-              for the wedding of
-            </p>
-          </div>
+      <div class="container-wide">
+        <nav class="font-sans">
+          <a href="/">Home</a>
+          <a href="/">Venue</a>
+          <a href="/">Accommodation</a>
+          <a href="/faq.html">FAQs</a>
+          <a href="/photos.html" style="text-decoration: underline;">Photos</a>
+          <a href="/">Contact</a>
+        </nav>
 
-          <hr />
-
-          <div>
-            <div class="fittext font-2">
-              <p>Ada & Joe</p>
-            </div>
-          </div>
-
-          <hr />
-
-          <div>
-            <p class="fittext font-sans">
-              14 August 2021
-            </p>
-            <div class="cols">
-              <div class="line"></div>
-              <div class="center-text">
-                in
-              </div>
-              <div class="line"></div>
-            </div>
-            <p class="fittext font-3">
-              Budapest, Hungary
-            </p>
-          </div>
-
-          <hr />
-
-          <div>
-            <p class="fittext font-sans">
-              formal invitation to follow
-            </p>
-            <hr />
-            <p class="fittext font-sans j-and-c">
-              where should we send your invitation?
-              <br />
-              Let us know at
-              <a href="mailto:addresses@ada-joe.com">addresses@ada-joe.com</a>!
-            </p>
-          </div>
+        <h2 class="j-and-c font-sans">
+          Photos
+        </h2>
+        <div>
+          <img src="https://source.unsplash.com/random" />
         </div>
       </div>
     </main>
+
     <footer>
       <p class="float-right">
         With ❤️ from Ada & Joe
@@ -112,7 +80,7 @@
       id="my-styles"
     />
     <noscript><link rel="stylesheet" href="/style.css"/></noscript>
-
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/fitty.js"></script>
     <script>
@@ -133,13 +101,14 @@
         }
       });
 
-      const linkEl = document.querySelector(
-        '#my-styles'
-      );
-      if (linkEl.rel === 'stylesheet') {
+      const linkEl = document.querySelector("#my-styles");
+      if (linkEl.rel === "stylesheet") {
         document.body.style.opacity = 1;
       } else {
-        linkEl.addEventListener("load", () => document.body.style.opacity = 1)
+        linkEl.addEventListener(
+          "load",
+          () => (document.body.style.opacity = 1)
+        );
       }
 
       const langEl = document.querySelector("#language");
