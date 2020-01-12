@@ -1,6 +1,6 @@
 {
   "name": "Ada Joe",
-  "short_name": "",
+  "short_name": "Ada Joe",
   "icons": [{
     "src":"https://cdn.glitch.com/b6b174b3-2c61-4c47-8475-d07397416ce2%2Fandroid-chrome-192x192.png?v=1577345846906",
     "sizes":"192x192",
@@ -11,5 +11,6 @@
   }],
   "theme_color":"#e2e8f0",
   "background_color":"#e2e8f0",
-  "display":"standalone"
+  "display":"standalone",
+  "start_url": "/index.html"
 }

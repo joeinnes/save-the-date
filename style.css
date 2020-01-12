@@ -151,3 +151,8 @@ img {
   width: 100%;
   height: auto;
 }
+
+#flag {
+  border: 0;
+  text-decoration: none;
+}
