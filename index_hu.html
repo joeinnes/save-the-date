@@ -42,7 +42,7 @@
       <div class="container">
         <div>
           <h1 class="fittext font-5">
-            save the date
+Írd be a naptárba
           </h1>
         </div>
       </div>
@@ -50,16 +50,16 @@
       <div class="container">
         <div class="padded">
           <div>
-            <p class="fittext font-sans">
-              for the wedding of
+            <p class="fittext font-2">
+              Ada és Joe
             </p>
           </div>
 
           <hr />
 
           <div>
-            <div class="fittext font-2">
-              <p>Ada & Joe</p>
+            <div class="fittext font-sans">
+              <p>NAGY NAPJA</p>
             </div>
           </div>
 
@@ -67,32 +67,25 @@
 
           <div>
             <p class="fittext font-sans">
-              14 August 2021
+              2021. AUGUSZTUS 14-én
             </p>
-            <div class="cols">
+            <!--<div class="cols">
               <div class="line"></div>
               <div class="center-text">
-                in
+                
               </div>
               <div class="line"></div>
-            </div>
+            </div> -->
+            <hr />
             <p class="fittext font-3">
-              Budapest, Hungary
+              Budapesten lesz
             </p>
           </div>
 
-          <hr />
-
           <div>
-            <p class="fittext font-sans">
-              formal invitation to follow
-            </p>
             <hr />
             <p class="fittext font-sans j-and-c">
-              where should we send your invitation?
-              <br />
-              Let us know at
-              <a class="mailtoui" href="mailto:wedding@ada-joe.com">wedding@ada-joe.com</a>!
+              MILYEN LAKCÍMRE KÜLDHETJÜK A MEGHÍVÓT? ÍRD MEG NEKÜNK AZ <a class="mailtoui" href="mailto:eskuvo@ada-joe.com">eskuvo@ada-joe.com</a> CÍMRE.
             </p>
           </div>
         </div>
@@ -100,10 +93,10 @@
     </main>
     <footer>
       <p class="float-right">
-        With ❤️ from Ada & Joe
+        Szeretettel Ada & Joe ❤️
       </p>
       <p id="language"></p>
-      <a href="index_hu.html">🇭🇺</a>
+      <a id="flag" href="index.html">🇬🇧</a>
     </footer>
     <link
       rel="preload"
@@ -148,8 +141,8 @@
         ? navigator.languages[0]
         : navigator.language || navigator.userLanguage;
 
-      if (prefLang[0] + prefLang[1] === "HU" && document.referrer.indexOf('ada-joe.com') < 0 && document.referrer.indexOf('glitch.me') < 0) {
-        window.location = "/index_hu.html"
+      if (prefLang[0] + prefLang[1] !== "HU" && document.referrer.indexOf('ada-joe.com') < 0 && document.referrer.indexOf('glitch.me') < 0) {
+        window.location = "index.html"
       }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/mailtoui@1.0.3/dist/mailtoui-min.js"></script>
